@@ -24,7 +24,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: sans-serif "Rubik";
+  font-family: "Open Sans", sans-serif;
   line-height: 1;
   background-color: #0e327a;
 }
@@ -54,7 +54,7 @@ body {
 /* HEADER */
 /* *************************************/
 .main-header {
-  padding: 0 4.8rem;
+  padding: 3.2rem 4.8rem;
   margin-top: 4.8rem;
   display: flex;
   justify-content: space-between;
@@ -63,21 +63,32 @@ body {
   color: #ffff;
   background-color: #0a0f28;
 }
-
+.nav {
+  padding-right: 2rem;
+}
 .btn {
   padding: 0.8rem 1.8rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   color: #0e327a;
   font-weight: 600;
+  border: none;
   border-radius: 5px;
   background-color: #fff;
   cursor: pointer;
+
+  transition: all 0.4s ease-in;
+}
+.btn:hover {
+  background-color: #eee;
 }
 ul li {
   display: inline-block;
   margin-right: 2.4rem;
   text-decoration: none;
   color: #fff;
+}
+ul li:last-child {
+  margin: 0;
 }
 ul li a:link,
 ul li a:visited {
@@ -108,12 +119,12 @@ ul li a:visited {
   align-items: center;
 }
 h1 {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   color: #fff;
   margin-bottom: 2.4rem;
 }
-p {
+.p-one {
   font-size: 1.2rem;
   color: #fff;
   line-height: 1.5;
@@ -144,4 +155,73 @@ p {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+}
+/* *************************************/
+/* SECTION TWO*/
+/* *************************************/
+.section-two {
+  padding: 4.8rem 4.8rem;
+  background-color: #1469ff;
+  position: relative;
+  text-align: center;
+}
+
+blockquote {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  padding: 0 9.6rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3.2rem;
+}
+.auther {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 4.8rem;
+}
+.aouthe-photo {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+span {
+  line-height: 1.8;
+  color: #fff;
+}
+.title {
+  color: #bbb;
+}
+.btnn {
+  background-color: inherit;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  transition: all 1s;
+}
+.btnn:hover {
+  background-color: #094cd1;
+}
+.btnn-icon:hover {
+  /* background-color: red; */
+}
+
+.btnn-icon {
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+}
+
+.btnn--left {
+  left: 10%;
+}
+.btn--right {
+  right: 10%;
 }
